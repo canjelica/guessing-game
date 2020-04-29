@@ -1,10 +1,10 @@
 import random
-secret_number = random.randint(0,100)
-#print(secret_number)
-'''A guessing game'''
+#secret_number = random.randint(0,100)
+print(secret_number)
 
-name = name.title()
 name = input("Hi, what's your name?")
+name = name.title()
+
 
 print(f"{name}, I'm thinking of a number between 1 and 100.")
 
