@@ -1,15 +1,18 @@
-name = input("Hi, what's your name?")
-name = name.title()
-
 import random
-secret_number = random.randint(1,100)
+secret_number = random.randint(0,100)
+#print(secret_number)
+'''A guessing game'''
 
-print("{}, I'm thinking of a number between 1 and 100.".format(name))
+name = name.title()
+name = input("Hi, what's your name?")
+
+print(f"{name}, I'm thinking of a number between 1 and 100.")
 
 guess = int(input("Try to guess my number: "))
 
-count = 0
 
+count = 0
+   
 while guess != secret_number:
     if guess > secret_number:
         print("Your guess is too high, try again.")
@@ -23,5 +26,3 @@ while guess != secret_number:
         count = count + 1
         print(f"Excellent job {name}! You guessed the number in {count} tries!")
         break
-
-
