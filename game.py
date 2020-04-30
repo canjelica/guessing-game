@@ -1,6 +1,6 @@
 import random
-#secret_number = random.randint(0,100)
-print(secret_number)
+secret_number = random.randint(0,100)
+#print(secret_number)
 
 name = input("Hi, what's your name?")
 name = name.title()
